@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FDFCDC;
+    color: #0081A7;
+    text-shadow: 2px 2px 3px rgba(0, 129, 167, 0.5);
+    text-align: center;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    text-shadow: 2px 2px 3px rgba(0, 129, 167, 0.5);
+    margin-bottom: 10px;
+}
+
+.name{
+    color: #00AFB9;
+    text-shadow: 2px 2px 3px rgba(0, 175, 185, 0.5);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+canvas{
+    margin-bottom: 10px;
+    background-color: blanchedalmond;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+    padding: 0 50px;
+    margin-bottom: 10px;
+}
+
+.buttons button{
+    border: 4px solid #FED9B7;
+    background-color: #FDFCDC;
+    color: #0081A7;
+    text-shadow: 2px 2px 3px rgba(0, 129, 167, 0.5);
+    font-size: clamp(0.5rem, 0.3rem + 1vw, 1.5rem);
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.buttons button:hover{
+    border: 4px solid #ffe5cd;
+    background-color: #ffffe6;
+    color: #00AFB9;
+    text-shadow: 2px 2px 3px rgba(0, 175, 185, 0.5);
+}
+
+#prediction{
+    color: #00AFB9;
+    text-shadow: 2px 2px 3px rgba(0, 175, 185, 0.5);
+    font-size: 1.45rem;
+}
+
+#prediction span{
+    color: #F07167;
+    text-shadow: rgba(240, 113, 103, 0.5);
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    main{
+        justify-content: start;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    #canvas{
+        width: 100%;
+    }
+  }
