@@ -58,8 +58,8 @@ function clearCanvas() {
 
 const predictionDisplay = document.getElementById("prediction");
 
-const BACKEND_URL = "http://localhost:8000";  // for local dev
-// const BACKEND_URL = "https://mnist-backend.onrender.com"; // for production
+// const BACKEND_URL = "http://localhost:8000";  // for local dev
+const BACKEND_URL = "https://noahs-number-predictor-mnist-nn.onrender.com/"; // for production
 
 
 function send() {
