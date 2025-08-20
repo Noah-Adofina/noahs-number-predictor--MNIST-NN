@@ -40,7 +40,7 @@ model.eval()
 
 # Setup flask app
 app = Flask(__name__, static_folder=FRONTEND_DIR, static_url_path="/")
-
+CORS(app)
 
 # Define transform (same as training)
 transform = transforms.Compose([
